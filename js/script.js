@@ -11,8 +11,23 @@ gitApi.addEventListener('submit',function(git){
     .then((result) => result.json())
     .then((data) => {
         document.getElementById("result").innerHTML = `
-            <img src="${data.avatar_url}"/>
-            <h2>${data.followers}</h2>
+            <h2>Username : ${data.login}</h2>
+
+            <div class='profile-grid'>
+                <div class='pitem1'>
+                    <div class='title'>Profile Image</div>
+                    <img src="${data.avatar_url}" class='profile-img'/>
+                </div>
+                <div class='pitem2'>
+                    <div class='title'>Profile Image</div>
+                    <img src="${data.avatar_url}" class='profile-img'/>
+                </div>
+            </div>
+
+            
+            <div class='bio'>
+            
+            </div>
         `
     })
 })
