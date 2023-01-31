@@ -12,6 +12,7 @@ gitApi.addEventListener('submit',function(git){
     .then((data) => {
         document.getElementById("result").innerHTML = `
             <img src="${data.avatar_url}"/>
+            <h2>${data.followers}</h2>
         `
     })
 })
