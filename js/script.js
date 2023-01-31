@@ -20,7 +20,7 @@ gitApi.addEventListener('submit',function(git){
                 </div>
                 <div class='pitem2'>
                     <div class='title'>Profile Image</div>
-                    <img src="${data.avatar_url}" class='profile-img'/>
+                    
                 </div>
             </div>
 
